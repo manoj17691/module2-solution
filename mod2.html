@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kalubandi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+	.messiya {
+		flex: 1;
+		border: 5px solid black;
+		margin: 5px;
+		padding: 10px;
+		background: white;
+		transition : 0.3s;
+	}
+	.messiya:first-child {
+		margin-left: 0;
+		background: orange;
+	}
+	.messiya:last-child {
+		margin-left: 0;
+		background: green;
+	}
+	body {
+		background-color: lightgreen;
+		font-family: poppins;
+		padding: 0;
+		margin: 0;
+	}
+	.manoj {
+		padding: 5px;
+		max-width: 960px;
+		width: 95%;
+		margin: 20px auto;
+	}
+	h1 {
+		padding: 0 15px;
+		text-align: center;
+		font-size: 35px;
+	}
+	.kalubandi {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: 5px 0;
+	}
+	.k {
+		text-align: right;
+		font-size: 25px;
+		font-color: white;
+		border: 2px solid black;
+		background-color: pink;
+	}
+	@media screen and (max-width: 980px) {
+		.kalubandi .messiya {
+			margin-bottom: 5px;
+			flex-basis: 40%;
+		}
+		.kalubandi .messiya:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+		.kalubandi .messiya:nth-last-child(2) {
+			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: 680px) {
+		.kalubandi .messiya {
+			flex-basis: 100%;
+			margin: 0 0 5px 0;
+		}
+	}
+
+</style>
+<body>
+	<div class="manoj">
+		<h1 align="center">Our Menu</h1>
+		<section class="kalubandi">
+			<div class="messiya">
+				<h2 class="k">house</h2>
+				<p>The real estate management system which is useful to the e users who wants to house, land, shops, and the properties.this web application which is useful to the e seller who is selling the houses, lands, shops, and there properties.This application is useful to both buyer and seller.The real estate management system is providing brief information about the land, houses, with the details of the seller.Buyer can easily identify seller details such as contact number and they address.</p>
+			</div>
+			<div class="messiya">
+				<h2 class="k">rented house</h2>
+				<p>The real estate management system which is useful to the e users who wants to house, land, shops, and the properties.this web application which is useful to the e seller who is selling the houses, lands, shops, and there properties.This application is useful to both buyer and seller.The real estate management system is providing brief information about the land, houses, with the details of the seller.Buyer can easily identify seller details such as contact number and they address.</p>
+			</div>
+			<div class="messiya">
+				<h2 class="k">plot</h2>
+				<p>The real estate management system which is useful to the e users who wants to house, land, shops, and the properties.this web application which is useful to the e seller who is selling the houses, lands, shops, and there properties.This application is useful to both buyer and seller.The real estate management system is providing brief information about the land, houses, with the details of the seller.Buyer can easily identify seller details such as contact number and they address.</p>
+			</div>
+		</section>
+	</div>
+
+</body>
+</html>
